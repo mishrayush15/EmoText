@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
+import {emojis} from '../assets/Emojis'
 
-const emojiMap = {
-    hello: '👋',
-    world: '🌍',
-};
+const emojiMap = emojis
 
 const TextBox = () => {
     const [text, setText] = useState('');
