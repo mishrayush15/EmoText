@@ -3,17 +3,6 @@ import React, { useState } from 'react';
 const emojiMap = {
     hello: '👋',
     world: '🌍',
-    love: '❤️',
-    smile: '😊',
-    cat: '🐱',
-    dog: '🐶',
-    fish: '🐟',
-    bird: '🐦',
-    elephant: '🐘',
-    cow: '🐄',
-    pig: '🐖',
-    horse: '🐎',
-    unicorn: '🦄',
 };
 
 const TextBox = () => {
@@ -37,9 +26,9 @@ const TextBox = () => {
             <textarea
                 value={text}
                 onChange={handleChange}
-                placeholder="Type your text here..."
+                placeholder=""
             />
-            <div className="converted-text">
+            <div className="">
                 {convertedText}
             </div>
         </div>
